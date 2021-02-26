@@ -1,6 +1,7 @@
 plugins {
     id 'scala'
     id 'application'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
 }
 
 repositories {
@@ -19,6 +20,4 @@ dependencies {
     testRuntimeOnly 'org.scala-lang.modules:scala-xml_2.12:1.2.0'
 }
 
-application {
-    mainClass = 'gradle.spark.quickstart.App'
-}
+mainClassName = 'gradle.spark.quickstart.App'
