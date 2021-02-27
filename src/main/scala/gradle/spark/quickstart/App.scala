@@ -16,7 +16,7 @@ object App {
     val source = spark.read
       .option("header", true)
       .option("inferSchema", true)
-      .csv("/home/finkel/Downloads/ml-latest/movies.csv")
+      .csv("/home/dma/projects/hadoop-workshop/ml-latest/movies.csv")
       .as[Movie]
     pipeline(source)(spark)
 
